@@ -123,17 +123,21 @@ These queries demonstrate how the transformed data can be used for analytical ex
 
 ## Data Visualization
 
-**Power BI** was used to create visualizations from the processed Olympic data.
+Power BI was used to explore the processed Tokyo 2020 Olympics data and present key analytical insights.
 
-The analysis includes:
+### Coach Analysis
 
-- Athlete distribution by gender
-- Disciplines with the highest number of coaches
-- Coach distribution by function
-- Medal distribution by gender
-- Technical officials by function
+Analysis of the Olympic coaching data, highlighting the disciplines with the highest number of coaches and the distribution between coaches and head coaches.
 
-Detailed visualization outputs are available in the [`docs`](./docs) directory.
+![Tokyo 2020 Olympics Coach Analysis](images/coaches-analysis.png)
+
+### Medal Analysis
+
+Analysis of medal distribution by gender across overall, gold, silver, and bronze medals.
+
+![Tokyo 2020 Olympics Medal Analysis](images/medals-analysis.png)
+
+Additional analytical outputs and supporting documentation are available in the [`docs`](./docs) directory.
 
 ---
 
