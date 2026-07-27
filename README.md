@@ -71,7 +71,6 @@ Data quality and transformation operations include:
 - **Amazon Athena** is used to query and analyze the processed datasets
 - Analytical results are visualized using **Power BI**
 
-```
 ## Data Quality & Transformation
 
 The raw Olympics datasets required several cleaning and validation steps before they could be used for analysis.
