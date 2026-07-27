@@ -8,32 +8,7 @@ The project demonstrates a complete data engineering workflow — from raw data 
 
 ## Architecture
 
-```text
-Tokyo 2020 Olympics Dataset
-            │
-            ▼
-      Raw Data Layer
-        Amazon S3
-            │
-            ▼
-    AWS Glue ETL Job
-        + PySpark
-            │
-            ▼
-  Data Cleaning & Transformation
-            │
-            ▼
-     Processed Data
-        Amazon S3
-            │
-            ▼
-      Amazon Athena
-       SQL Analytics
-            │
-            ▼
-        Power BI
-   Analytics & Dashboard
-```
+![Tokyo 2020 Olympics Data Engineering Pipeline](images/architecture-diagram.png)
 
 ---
 
