@@ -45,6 +45,8 @@ tokyo-2020-olympics-data-pipeline/
 │
 └── README.md
 
+```
+
 ## ETL Pipeline
 
 ### 1. Extract
