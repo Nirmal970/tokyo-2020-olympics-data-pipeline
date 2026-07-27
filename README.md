@@ -26,3 +26,21 @@ The project demonstrates a complete data engineering workflow — from raw data 
 - Corrected inconsistent data values to improve data quality
 - Queried transformed datasets using **Amazon Athena and SQL**
 - Created interactive visualizations and analytical dashboards using **Power BI**
+
+## Project Structure
+
+```text
+tokyo-2020-olympics-data-pipeline/
+│
+├── notebooks/
+│   ├── olympics-etl-pipeline.ipynb
+│   └── spark-data-cleaning.ipynb
+│
+├── sql/
+│   └── olympics-analysis-queries.sql
+│
+├── docs/
+│   ├── data-analysis.pdf
+│   └── data-visualization.pdf
+│
+└── README.md
