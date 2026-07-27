@@ -70,3 +70,18 @@ Data quality and transformation operations include:
 - Cleaned datasets are loaded back into **Amazon S3**
 - **Amazon Athena** is used to query and analyze the processed datasets
 - Analytical results are visualized using **Power BI**
+
+```
+## Data Quality & Transformation
+
+The raw Olympics datasets required several cleaning and validation steps before they could be used for analysis.
+
+Key data quality improvements included:
+
+- Removed **159 athlete records** with missing values in critical fields such as gender, birth date, and discipline
+- Removed columns containing large amounts of missing or unnecessary data
+- Eliminated duplicate athlete and coach records
+- Generated unique identifiers such as `athlete_id`, `coach_id`, and `to_id`
+- Preserved referential integrity between athletes and medal records using `athlete_id`
+- Corrected inconsistent gender values in the medals dataset using athlete data
+- Validated transformed datasets before loading them into the analytical layer
