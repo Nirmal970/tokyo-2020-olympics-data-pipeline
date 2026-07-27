@@ -1,11 +1,17 @@
-The objective of this project is to create an efficient data pipeline for the Olympic Games dataset. This involves the entire data engineering process , from data ingestion and database creation to ETL processes, data retrieval. and it involves building an interactive dashboard to showcase the useful insights of the Olympic Games using the processed data.
+# Tokyo 2020 Olympics Data Engineering Pipeline
 
-Technologies used:
-Python
-SQL
-Apache Spark
-AWS S3
-AWS EC2
-AWS Glue
-AWS Athena
-PowerBi
+An end-to-end data engineering project that processes and analyzes Tokyo 2020 Olympics data using **AWS, PySpark, SQL, and Power BI**.
+
+The project demonstrates a complete data engineering workflow — from raw data ingestion and cloud storage to ETL processing, data transformation, analytical querying, and visualization.
+
+## Tech Stack
+
+- **Cloud:** AWS S3, AWS Glue, Amazon Athena
+- **Data Processing:** PySpark, Python
+- **Database & Querying:** SQL, Amazon Athena
+- **Visualization:** Power BI
+- **Development:** Jupyter Notebook
+
+## Project Workflow
+
+`Tokyo 2020 Dataset` → `Amazon S3` → `AWS Glue + PySpark` → `Amazon S3` → `Amazon Athena` → `Power BI`
