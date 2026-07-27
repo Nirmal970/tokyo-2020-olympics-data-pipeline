@@ -45,3 +45,26 @@ tokyo-2020-olympics-data-pipeline/
 │
 └── README.md
 
+## ETL Pipeline
+
+### 1. Extract
+- Raw Tokyo 2020 Olympics datasets are stored in **Amazon S3**
+- **AWS Glue** reads the datasets from the S3 source bucket
+- AWS Glue DynamicFrames are converted into **PySpark DataFrames** for processing
+
+### 2. Transform
+Data quality and transformation operations include:
+
+- Removing records with missing values in critical athlete fields
+- Dropping unnecessary columns with large numbers of null values
+- Removing duplicate athlete and coach records
+- Extracting unique `athlete_id` and `coach_id` values using regular expressions
+- Creating an `athlete_id` relationship between athlete and medal datasets
+- Correcting inconsistent gender values in the medals dataset
+- Validating transformed records before loading
+
+### 3. Load
+- Transformed datasets are exported in CSV format
+- Cleaned datasets are loaded back into **Amazon S3**
+- **Amazon Athena** is used to query and analyze the processed datasets
+- Analytical results are visualized using **Power BI**
